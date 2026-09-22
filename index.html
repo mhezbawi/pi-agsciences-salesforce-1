@@ -412,7 +412,7 @@ footer{background:var(--sf-dark);color:rgba(255,255,255,.5);text-align:center;pa
     <li><a href="#products">Solution</a></li>
     <li><a href="#architecture">Architecture</a></li>
     <li><a href="#demo">Demo</a></li>
-    <li><a href="#lightning-dash">Dashboard</a></li>
+    <li><a href="#lightning-dash">CRM Preview</a></li>
     <li><a href="#roi">ROI</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#pricing">Pricing</a></li>
@@ -868,94 +868,13 @@ footer{background:var(--sf-dark);color:rgba(255,255,255,.5);text-align:center;pa
 </div>
 </section>
 
-<!-- REAL SALESFORCE DASHBOARD -->
-<section class="dashboard" id="dashboard">
-<div class="container">
-  <div class="text-center" style="margin-bottom:36px">
-    <span class="section-label">The Real Product</span>
-    <h2>What Salesforce Actually Looks Like</h2>
-    <p class="section-subtitle">Click each tab to see the real Sales Cloud, Agentforce, and Marketing Cloud interfaces your team will use.</p>
-  </div>
-  <div class="dash-tabs">
-    <button class="dash-tab active" onclick="setDashTab('pipeline')">Sales Cloud CRM</button>
-    <button class="dash-tab" onclick="setDashTab('activity')">Agentforce AI</button>
-    <button class="dash-tab" onclick="setDashTab('marketing')">Marketing Cloud</button>
-    <button class="dash-tab" onclick="setDashTab('forecast')">Email & Journeys</button>
-  </div>
-
-  <!-- Sales Cloud -->
-  <div class="dash-panel active" id="dash-pipeline">
-    <div class="dash-metrics">
-      <div class="dash-metric"><div class="metric-value">Pipeline</div><div class="metric-label">AI-Scored Deals</div><div class="metric-change up">Real-time visibility</div></div>
-      <div class="dash-metric"><div class="metric-value">Lead Score</div><div class="metric-label">Einstein AI Scoring</div><div class="metric-change up">Auto-prioritized</div></div>
-      <div class="dash-metric"><div class="metric-value">Forecast</div><div class="metric-label">Collaborative</div><div class="metric-change up">AI-assisted</div></div>
-      <div class="dash-metric"><div class="metric-value">Mobile</div><div class="metric-label">CarPlay + App</div><div class="metric-change up">Field-ready</div></div>
-    </div>
-    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:16px;position:relative">
-      <img src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/03/sc-product-promoblade.png?w=1024" alt="Sales Cloud Dashboard with AI lead scoring" style="width:100%;display:block;border-radius:var(--radius)">
-      <div style="position:absolute;bottom:16px;left:16px;background:rgba(3,45,96,.9);backdrop-filter:blur(8px);color:#fff;padding:10px 16px;border-radius:8px;font-size:.8rem;max-width:360px">
-        <strong>Sales Cloud</strong> - AI-scored pipeline with lead prioritization. Every dealer, every rep, every deal in one view.
-      </div>
-    </div>
-  </div>
-
-  <!-- Agentforce -->
-  <div class="dash-panel" id="dash-activity">
-    <div class="dash-metrics">
-      <div class="dash-metric"><div class="metric-value">Prospect</div><div class="metric-label">24/7 AI Outreach</div><div class="metric-change up">Autonomous</div></div>
-      <div class="dash-metric"><div class="metric-value">Coach</div><div class="metric-label">Real-Time Coaching</div><div class="metric-change up">Per-deal tips</div></div>
-      <div class="dash-metric"><div class="metric-value">Research</div><div class="metric-label">Account Intel</div><div class="metric-change up">Auto-generated</div></div>
-      <div class="dash-metric"><div class="metric-value">Close</div><div class="metric-label">Deal Scoring</div><div class="metric-change up">Risk alerts</div></div>
-    </div>
-    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:16px;position:relative">
-      <img src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/09/Sales-Portfolio-Image-1920x1080-1.png?w=1024" alt="Agentforce Sales AI Agents" style="width:100%;display:block;border-radius:var(--radius)">
-      <div style="position:absolute;bottom:16px;left:16px;background:rgba(3,45,96,.9);backdrop-filter:blur(8px);color:#fff;padding:10px 16px;border-radius:8px;font-size:.8rem;max-width:360px">
-        <strong>Agentforce</strong> - AI agents that prospect, research accounts, draft follow-ups, and coach reps across the entire sales cycle.
-      </div>
-    </div>
-  </div>
-
-  <!-- Marketing Cloud -->
-  <div class="dash-panel" id="dash-marketing">
-    <div class="dash-metrics">
-      <div class="dash-metric"><div class="metric-value">Segments</div><div class="metric-label">AI-Built Audiences</div><div class="metric-change up">Data Cloud powered</div></div>
-      <div class="dash-metric"><div class="metric-value">Campaigns</div><div class="metric-label">Multi-Channel</div><div class="metric-change up">AI-generated</div></div>
-      <div class="dash-metric"><div class="metric-value">Leads</div><div class="metric-label">Scored & Routed</div><div class="metric-change up">By geography</div></div>
-      <div class="dash-metric"><div class="metric-value">ROI</div><div class="metric-label">Campaign Analytics</div><div class="metric-change up">Real-time</div></div>
-    </div>
-    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:16px;position:relative">
-      <img src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/09/product-feature-blade-1-contentful-Palmata-asset-1-720x720-1.webp?w=1024" alt="Marketing Cloud customer profiles and AI segmentation" style="width:100%;display:block;border-radius:var(--radius)">
-      <div style="position:absolute;bottom:16px;left:16px;background:rgba(3,45,96,.9);backdrop-filter:blur(8px);color:#fff;padding:10px 16px;border-radius:8px;font-size:.8rem;max-width:360px">
-        <strong>Marketing Cloud Growth</strong> - AI segment creation with unified customer profiles. Build audiences from CRM, web, and social data.
-      </div>
-    </div>
-  </div>
-
-  <!-- Email & Journeys -->
-  <div class="dash-panel" id="dash-forecast">
-    <div class="dash-metrics">
-      <div class="dash-metric"><div class="metric-value">Email</div><div class="metric-label">AI-Written Content</div><div class="metric-change up">Personalized</div></div>
-      <div class="dash-metric"><div class="metric-value">SMS</div><div class="metric-label">Two-Way Messaging</div><div class="metric-change up">Automated</div></div>
-      <div class="dash-metric"><div class="metric-value">Journeys</div><div class="metric-label">Multi-Step Flows</div><div class="metric-change up">CRM-triggered</div></div>
-      <div class="dash-metric"><div class="metric-value">Ads</div><div class="metric-label">LinkedIn + Google</div><div class="metric-change up">Integrated</div></div>
-    </div>
-    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:16px;position:relative">
-      <img src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/09/n-up-blade-contentful-agentforce-commerce-asset-2-720x720-1.webp?w=1024" alt="Marketing Cloud email and SMS journeys" style="width:100%;display:block;border-radius:var(--radius)">
-      <div style="position:absolute;bottom:16px;left:16px;background:rgba(3,45,96,.9);backdrop-filter:blur(8px);color:#fff;padding:10px 16px;border-radius:8px;font-size:.8rem;max-width:360px">
-        <strong>Email & Journeys</strong> - Two-way email and SMS with AI content generation and multi-step flow orchestration.
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- LIGHTNING DASHBOARD MOCK -->
+<!-- INTERACTIVE CRM SIMULATION -->
 <section class="lightning-dash section" id="lightning-dash">
 <div class="container">
   <div class="text-center" style="margin-bottom:40px">
     <span class="section-label">Your Future CRM</span>
-    <h2>PI AgSciences — Live Dashboard Preview</h2>
-    <p class="section-sub">What your team will see every day in Salesforce.</p>
+    <h2>PI AgSciences — Interactive Sales Cloud</h2>
+    <p class="section-sub">Click through the sidebar to explore what your reps, managers, and logistics team will see every day.</p>
   </div>
   <div class="browser-frame fade-in">
     <div class="browser-chrome">
@@ -974,7 +893,8 @@ footer{background:var(--sf-dark);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="sidebar-item" onclick="setLightningTab('lt-opps',this)" style="padding:10px 14px;font-size:.8rem;color:rgba(255,255,255,.5);margin:8px 6px;cursor:pointer">🤝 Opportunities</div>
         <div class="sidebar-item" onclick="setLightningTab('lt-campaigns',this)" style="padding:10px 14px;font-size:.8rem;color:rgba(255,255,255,.5);margin:8px 6px;cursor:pointer">📧 Campaigns</div>
         <div class="sidebar-item" onclick="setLightningTab('lt-agentforce',this)" style="padding:10px 14px;font-size:.8rem;color:rgba(255,255,255,.5);margin:8px 6px;cursor:pointer">🤖 Agentforce</div>
-        <div class="sidebar-item" style="padding:10px 14px;font-size:.8rem;color:rgba(255,255,255,.3);margin:8px 6px;cursor:default">📋 Reports</div>
+        <div class="sidebar-item" onclick="setLightningTab('lt-account360',this)" style="padding:10px 14px;font-size:.8rem;color:rgba(255,255,255,.5);margin:8px 6px;cursor:pointer">📋 Account 360</div>
+        <div class="sidebar-item" onclick="setLightningTab('lt-kanban',this)" style="padding:10px 14px;font-size:.8rem;color:rgba(255,255,255,.5);margin:8px 6px;cursor:pointer">📌 Pipeline Board</div>
       </div>
       <div class="dash-main">
 
@@ -1118,6 +1038,103 @@ footer{background:var(--sf-dark);color:rgba(255,255,255,.5);text-align:center;pa
                 <div style="text-align:center;padding:8px;background:var(--gray-100);border-radius:6px"><div style="font-size:1.1rem;font-weight:800;color:var(--sf-blue)">3.2%</div><div style="font-size:.65rem;color:var(--gray-600)">CTR</div></div>
                 <div style="text-align:center;padding:8px;background:var(--gray-100);border-radius:6px"><div style="font-size:1.1rem;font-weight:800;color:var(--green)">$18</div><div style="font-size:.65rem;color:var(--gray-600)">Cost/Lead</div></div>
                 <div style="text-align:center;padding:8px;background:var(--gray-100);border-radius:6px"><div style="font-size:1.1rem;font-weight:800;color:#1a5cff">33</div><div style="font-size:.65rem;color:var(--gray-600)">Leads</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACCOUNT 360 PANEL -->
+        <div class="lt-panel" id="lt-account360" style="display:none">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-200)">
+            <div style="width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--sf-blue),var(--sf-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1rem">F&F</div>
+            <div>
+              <h4 style="font-size:1rem;color:var(--sf-dark);margin-bottom:2px">Farm & Field Supply, Inc.</h4>
+              <div style="font-size:.72rem;color:var(--gray-600)">Dealer/Distributor &middot; Springfield, MO &middot; Owner: J. Martinez &middot; <span style="color:var(--green);font-weight:600">Active</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px">
+            <div style="text-align:center;padding:10px;background:var(--white);border-radius:8px;box-shadow:var(--shadow)"><div style="font-size:1.1rem;font-weight:800;color:var(--sf-dark)">$412K</div><div style="font-size:.65rem;color:var(--gray-600)">YTD Revenue</div></div>
+            <div style="text-align:center;padding:10px;background:var(--white);border-radius:8px;box-shadow:var(--shadow)"><div style="font-size:1.1rem;font-weight:800;color:var(--sf-blue)">3</div><div style="font-size:.65rem;color:var(--gray-600)">Open Opps ($84K)</div></div>
+            <div style="text-align:center;padding:10px;background:var(--white);border-radius:8px;box-shadow:var(--shadow)"><div style="font-size:1.1rem;font-weight:800;color:var(--green)">8.4</div><div style="font-size:.65rem;color:var(--gray-600)">NPS Score</div></div>
+            <div style="text-align:center;padding:10px;background:var(--white);border-radius:8px;box-shadow:var(--shadow)"><div style="font-size:1.1rem;font-weight:800;color:var(--orange)">Dec 15</div><div style="font-size:.65rem;color:var(--gray-600)">Renewal Date</div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div style="background:var(--white);border-radius:8px;padding:14px;box-shadow:var(--shadow)">
+              <h4 style="font-size:.82rem;margin-bottom:10px;color:var(--sf-dark)">Contacts</h4>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="display:flex;align-items:center;gap:8px;font-size:.75rem"><div style="width:28px;height:28px;border-radius:50%;background:var(--sf-light);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:var(--sf-dark)">MT</div><div><strong>Mike Torres</strong><br><span style="color:var(--gray-600)">Purchasing Manager</span></div></div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:.75rem"><div style="width:28px;height:28px;border-radius:50%;background:var(--green-light);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:var(--green)">SL</div><div><strong>Sarah Lopez</strong><br><span style="color:var(--gray-600)">General Manager</span></div></div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:.75rem"><div style="width:28px;height:28px;border-radius:50%;background:#fff3e0;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:var(--orange)">BW</div><div><strong>Bill Watson</strong><br><span style="color:var(--gray-600)">Field Agronomist</span></div></div>
+              </div>
+            </div>
+            <div style="background:var(--white);border-radius:8px;padding:14px;box-shadow:var(--shadow)">
+              <h4 style="font-size:.82rem;margin-bottom:10px;color:var(--sf-dark)">Recent Activity</h4>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font-size:.72rem;padding:6px 0;border-bottom:1px solid var(--gray-200)"><span style="color:var(--green)">●</span> <strong>Site Visit</strong> - Discussed spring ProGrow order <span style="color:var(--gray-600)">Today</span></div>
+                <div style="font-size:.72rem;padding:6px 0;border-bottom:1px solid var(--gray-200)"><span style="color:var(--sf-blue)">●</span> <strong>Quote Sent</strong> - ProGrow 360 (200 gal, $15,692) <span style="color:var(--gray-600)">Yesterday</span></div>
+                <div style="font-size:.72rem;padding:6px 0;border-bottom:1px solid var(--gray-200)"><span style="color:var(--orange)">●</span> <strong>Email</strong> - AI follow-up sent by Agentforce <span style="color:var(--gray-600)">2 days ago</span></div>
+                <div style="font-size:.72rem;padding:6px 0"><span style="color:#1a5cff">●</span> <strong>SAP Order</strong> - Invoice #4821 processed ($28,400) <span style="color:var(--gray-600)">Last week</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="background:var(--white);border-radius:8px;padding:14px;box-shadow:var(--shadow);margin-top:12px">
+            <h4 style="font-size:.82rem;margin-bottom:10px;color:var(--sf-dark)">Order History (SAP)</h4>
+            <table style="width:100%;border-collapse:collapse;font-size:.72rem">
+              <thead><tr style="border-bottom:1px solid var(--gray-200)"><th style="padding:6px 4px;text-align:left;color:var(--gray-600);font-size:.65rem;text-transform:uppercase">Date</th><th style="padding:6px 4px;text-align:left;color:var(--gray-600);font-size:.65rem;text-transform:uppercase">Product</th><th style="padding:6px 4px;text-align:left;color:var(--gray-600);font-size:.65rem;text-transform:uppercase">Qty</th><th style="padding:6px 4px;text-align:right;color:var(--gray-600);font-size:.65rem;text-transform:uppercase">Amount</th></tr></thead>
+              <tbody>
+                <tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:6px 4px">Sep 12</td><td style="padding:6px 4px">ProGrow 360 Herbicide</td><td style="padding:6px 4px">150 gal</td><td style="padding:6px 4px;text-align:right;font-weight:600">$28,400</td></tr>
+                <tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:6px 4px">Aug 28</td><td style="padding:6px 4px">BioShield Fungicide</td><td style="padding:6px 4px">80 gal</td><td style="padding:6px 4px;text-align:right;font-weight:600">$14,200</td></tr>
+                <tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:6px 4px">Jul 15</td><td style="padding:6px 4px">CropGuard Insecticide</td><td style="padding:6px 4px">200 gal</td><td style="padding:6px 4px;text-align:right;font-weight:600">$31,800</td></tr>
+                <tr><td style="padding:6px 4px">Jun 3</td><td style="padding:6px 4px">ProGrow 360 Herbicide</td><td style="padding:6px 4px">120 gal</td><td style="padding:6px 4px;text-align:right;font-weight:600">$22,600</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KANBAN PIPELINE BOARD -->
+        <div class="lt-panel" id="lt-kanban" style="display:none">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+            <h4 style="font-size:.95rem;color:var(--sf-dark)">Opportunity Kanban Board</h4>
+            <span style="font-size:.7rem;color:var(--gray-600)">Drag to advance stage</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;overflow-x:auto">
+            <div style="background:var(--gray-100);border-radius:8px;padding:10px;min-height:280px">
+              <div style="font-size:.72rem;font-weight:700;text-transform:uppercase;color:var(--sf-accent);margin-bottom:10px;display:flex;justify-content:space-between">Prospecting <span style="background:var(--sf-light);padding:2px 8px;border-radius:10px;color:var(--sf-dark)">3</span></div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid var(--sf-accent);cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">Delta Seeds Corp</div><div style="font-size:.65rem;color:var(--gray-600)">$24K &middot; K. Davis</div>
+              </div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid var(--sf-accent);cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">Tri-State Ag Supply</div><div style="font-size:.65rem;color:var(--gray-600)">$18K &middot; R. Chen</div>
+              </div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid var(--sf-accent);cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">Prairie Land Co-op</div><div style="font-size:.65rem;color:var(--gray-600)">$31K &middot; J. Martinez</div>
+              </div>
+            </div>
+            <div style="background:var(--gray-100);border-radius:8px;padding:10px;min-height:280px">
+              <div style="font-size:.72rem;font-weight:700;text-transform:uppercase;color:var(--sf-blue);margin-bottom:10px;display:flex;justify-content:space-between">Discovery <span style="background:var(--sf-light);padding:2px 8px;border-radius:10px;color:var(--sf-dark)">2</span></div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid var(--sf-blue);cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">Farm & Field - ProGrow Exp.</div><div style="font-size:.65rem;color:var(--gray-600)">$84K &middot; J. Martinez</div>
+              </div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid var(--sf-blue);cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">AgriChem Solutions</div><div style="font-size:.65rem;color:var(--gray-600)">$45K &middot; T. Brooks</div>
+              </div>
+            </div>
+            <div style="background:var(--gray-100);border-radius:8px;padding:10px;min-height:280px">
+              <div style="font-size:.72rem;font-weight:700;text-transform:uppercase;color:#1a5cff;margin-bottom:10px;display:flex;justify-content:space-between">Proposal <span style="background:var(--sf-light);padding:2px 8px;border-radius:10px;color:var(--sf-dark)">2</span></div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid #1a5cff;cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">MidSouth Ag - Q4 Herbicide</div><div style="font-size:.65rem;color:var(--gray-600)">$42K &middot; T. Brooks</div>
+              </div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid #1a5cff;cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">Midwest Dealer Group</div><div style="font-size:.65rem;color:var(--gray-600)">$67K &middot; K. Davis</div>
+              </div>
+            </div>
+            <div style="background:var(--gray-100);border-radius:8px;padding:10px;min-height:280px">
+              <div style="font-size:.72rem;font-weight:700;text-transform:uppercase;color:var(--green);margin-bottom:10px;display:flex;justify-content:space-between">Negotiation <span style="background:var(--green-light);padding:2px 8px;border-radius:10px;color:var(--green)">2</span></div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid var(--green);cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">Heartland Seeds - Spring</div><div style="font-size:.65rem;color:var(--gray-600)">$52K &middot; J. Martinez &middot; <span style="color:var(--green)">85%</span></div>
+              </div>
+              <div style="background:var(--white);border-radius:6px;padding:10px;box-shadow:0 1px 4px rgba(0,0,0,.06);border-left:3px solid var(--orange);cursor:grab">
+                <div style="font-size:.78rem;font-weight:600">Valley Ag - Annual Renewal</div><div style="font-size:.65rem;color:var(--gray-600)">$38K &middot; K. Davis &middot; <span style="color:var(--orange)">25% ⚠️</span></div>
               </div>
             </div>
           </div>
