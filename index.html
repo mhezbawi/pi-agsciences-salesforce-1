@@ -868,98 +868,81 @@ footer{background:var(--sf-dark);color:rgba(255,255,255,.5);text-align:center;pa
 </div>
 </section>
 
-<!-- LIVE DASHBOARD -->
+<!-- REAL SALESFORCE DASHBOARD -->
 <section class="dashboard" id="dashboard">
 <div class="container">
   <div class="text-center" style="margin-bottom:36px">
-    <span class="section-label">Executive Dashboard</span>
-    <h2>What Leadership Sees Day One</h2>
-    <p class="section-subtitle">Live, real-time visibility into every metric that matters.</p>
+    <span class="section-label">The Real Product</span>
+    <h2>What Salesforce Actually Looks Like</h2>
+    <p class="section-subtitle">Click each tab to see the real Sales Cloud, Agentforce, and Marketing Cloud interfaces your team will use.</p>
   </div>
   <div class="dash-tabs">
-    <button class="dash-tab active" onclick="setDashTab('pipeline')">Deal Pipeline</button>
-    <button class="dash-tab" onclick="setDashTab('activity')">Rep Activity</button>
-    <button class="dash-tab" onclick="setDashTab('marketing')">Marketing</button>
-    <button class="dash-tab" onclick="setDashTab('forecast')">Forecast</button>
+    <button class="dash-tab active" onclick="setDashTab('pipeline')">Sales Cloud CRM</button>
+    <button class="dash-tab" onclick="setDashTab('activity')">Agentforce AI</button>
+    <button class="dash-tab" onclick="setDashTab('marketing')">Marketing Cloud</button>
+    <button class="dash-tab" onclick="setDashTab('forecast')">Email & Journeys</button>
   </div>
 
-  <!-- Pipeline -->
+  <!-- Sales Cloud -->
   <div class="dash-panel active" id="dash-pipeline">
     <div class="dash-metrics">
-      <div class="dash-metric"><div class="metric-value">$2.8M</div><div class="metric-label">Open Pipeline</div><div class="metric-change up">↑ 18% QoQ</div></div>
-      <div class="dash-metric"><div class="metric-value">47</div><div class="metric-label">Active Deals</div><div class="metric-change up">↑ 12 new</div></div>
-      <div class="dash-metric"><div class="metric-value">34%</div><div class="metric-label">Win Rate</div><div class="metric-change up">↑ 6 pts</div></div>
-      <div class="dash-metric"><div class="metric-value">28 days</div><div class="metric-label">Avg Sales Cycle</div><div class="metric-change up">↓ 8 days</div></div>
+      <div class="dash-metric"><div class="metric-value">Pipeline</div><div class="metric-label">AI-Scored Deals</div><div class="metric-change up">Real-time visibility</div></div>
+      <div class="dash-metric"><div class="metric-value">Lead Score</div><div class="metric-label">Einstein AI Scoring</div><div class="metric-change up">Auto-prioritized</div></div>
+      <div class="dash-metric"><div class="metric-value">Forecast</div><div class="metric-label">Collaborative</div><div class="metric-change up">AI-assisted</div></div>
+      <div class="dash-metric"><div class="metric-value">Mobile</div><div class="metric-label">CarPlay + App</div><div class="metric-change up">Field-ready</div></div>
     </div>
-    <div class="dash-chart">
-      <h4 style="margin-bottom:16px;font-size:.9rem">Pipeline by Stage</h4>
-      <div class="bar-chart">
-        <div class="bar-group"><div class="bar-value">$680K</div><div class="bar blue" style="height:45%"></div><div class="bar-label">Discovery</div></div>
-        <div class="bar-group"><div class="bar-value">$520K</div><div class="bar blue" style="height:35%"></div><div class="bar-label">Demo</div></div>
-        <div class="bar-group"><div class="bar-value">$890K</div><div class="bar blue" style="height:60%"></div><div class="bar-label">Proposal</div></div>
-        <div class="bar-group"><div class="bar-value">$440K</div><div class="bar blue" style="height:30%"></div><div class="bar-label">Negotiate</div></div>
-        <div class="bar-group"><div class="bar-value">$270K</div><div class="bar green" style="height:18%"></div><div class="bar-label">Closed Won</div></div>
+    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:16px;position:relative">
+      <img src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/03/sc-product-promoblade.png?w=1024" alt="Sales Cloud Dashboard with AI lead scoring" style="width:100%;display:block;border-radius:var(--radius)">
+      <div style="position:absolute;bottom:16px;left:16px;background:rgba(3,45,96,.9);backdrop-filter:blur(8px);color:#fff;padding:10px 16px;border-radius:8px;font-size:.8rem;max-width:360px">
+        <strong>Sales Cloud</strong> - AI-scored pipeline with lead prioritization. Every dealer, every rep, every deal in one view.
       </div>
     </div>
   </div>
 
-  <!-- Activity -->
+  <!-- Agentforce -->
   <div class="dash-panel" id="dash-activity">
     <div class="dash-metrics">
-      <div class="dash-metric"><div class="metric-value">156</div><div class="metric-label">Site Visits / Mo</div><div class="metric-change up">↑ 24%</div></div>
-      <div class="dash-metric"><div class="metric-value">23</div><div class="metric-label">Active Reps</div><div class="metric-change up">100% adopted</div></div>
-      <div class="dash-metric"><div class="metric-value">8.2</div><div class="metric-label">Avg Visits / Rep</div><div class="metric-change up">↑ from 5.1</div></div>
-      <div class="dash-metric"><div class="metric-value">92%</div><div class="metric-label">Log Compliance</div><div class="metric-change up">↑ from 0%</div></div>
+      <div class="dash-metric"><div class="metric-value">Prospect</div><div class="metric-label">24/7 AI Outreach</div><div class="metric-change up">Autonomous</div></div>
+      <div class="dash-metric"><div class="metric-value">Coach</div><div class="metric-label">Real-Time Coaching</div><div class="metric-change up">Per-deal tips</div></div>
+      <div class="dash-metric"><div class="metric-value">Research</div><div class="metric-label">Account Intel</div><div class="metric-change up">Auto-generated</div></div>
+      <div class="dash-metric"><div class="metric-value">Close</div><div class="metric-label">Deal Scoring</div><div class="metric-change up">Risk alerts</div></div>
     </div>
-    <div class="dash-chart">
-      <h4 style="margin-bottom:16px;font-size:.9rem">Weekly Rep Activity (Site Visits)</h4>
-      <div class="bar-chart">
-        <div class="bar-group"><div class="bar-value">32</div><div class="bar green" style="height:55%"></div><div class="bar-label">Mon</div></div>
-        <div class="bar-group"><div class="bar-value">41</div><div class="bar green" style="height:70%"></div><div class="bar-label">Tue</div></div>
-        <div class="bar-group"><div class="bar-value">38</div><div class="bar green" style="height:65%"></div><div class="bar-label">Wed</div></div>
-        <div class="bar-group"><div class="bar-value">45</div><div class="bar green" style="height:77%"></div><div class="bar-label">Thu</div></div>
-        <div class="bar-group"><div class="bar-value">28</div><div class="bar green" style="height:48%"></div><div class="bar-label">Fri</div></div>
+    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:16px;position:relative">
+      <img src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/09/Sales-Portfolio-Image-1920x1080-1.png?w=1024" alt="Agentforce Sales AI Agents" style="width:100%;display:block;border-radius:var(--radius)">
+      <div style="position:absolute;bottom:16px;left:16px;background:rgba(3,45,96,.9);backdrop-filter:blur(8px);color:#fff;padding:10px 16px;border-radius:8px;font-size:.8rem;max-width:360px">
+        <strong>Agentforce</strong> - AI agents that prospect, research accounts, draft follow-ups, and coach reps across the entire sales cycle.
       </div>
     </div>
   </div>
 
-  <!-- Marketing -->
+  <!-- Marketing Cloud -->
   <div class="dash-panel" id="dash-marketing">
     <div class="dash-metrics">
-      <div class="dash-metric"><div class="metric-value">12.4K</div><div class="metric-label">Reach / Month</div><div class="metric-change up">↑ from 0</div></div>
-      <div class="dash-metric"><div class="metric-value">847</div><div class="metric-label">Web Visitors</div><div class="metric-change up">↑ tracked</div></div>
-      <div class="dash-metric"><div class="metric-value">68</div><div class="metric-label">Leads Generated</div><div class="metric-change up">New capability</div></div>
-      <div class="dash-metric"><div class="metric-value">4.2%</div><div class="metric-label">Conversion Rate</div><div class="metric-change up">Industry avg: 2.8%</div></div>
+      <div class="dash-metric"><div class="metric-value">Segments</div><div class="metric-label">AI-Built Audiences</div><div class="metric-change up">Data Cloud powered</div></div>
+      <div class="dash-metric"><div class="metric-value">Campaigns</div><div class="metric-label">Multi-Channel</div><div class="metric-change up">AI-generated</div></div>
+      <div class="dash-metric"><div class="metric-value">Leads</div><div class="metric-label">Scored & Routed</div><div class="metric-change up">By geography</div></div>
+      <div class="dash-metric"><div class="metric-value">ROI</div><div class="metric-label">Campaign Analytics</div><div class="metric-change up">Real-time</div></div>
     </div>
-    <div class="dash-chart">
-      <h4 style="margin-bottom:16px;font-size:.9rem">Leads by Channel</h4>
-      <div class="bar-chart">
-        <div class="bar-group"><div class="bar-value">24</div><div class="bar orange" style="height:60%"></div><div class="bar-label">LinkedIn</div></div>
-        <div class="bar-group"><div class="bar-value">18</div><div class="bar orange" style="height:45%"></div><div class="bar-label">Google</div></div>
-        <div class="bar-group"><div class="bar-value">14</div><div class="bar orange" style="height:35%"></div><div class="bar-label">Facebook</div></div>
-        <div class="bar-group"><div class="bar-value">8</div><div class="bar orange" style="height:20%"></div><div class="bar-label">Instagram</div></div>
-        <div class="bar-group"><div class="bar-value">4</div><div class="bar orange" style="height:10%"></div><div class="bar-label">Organic</div></div>
+    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:16px;position:relative">
+      <img src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/09/product-feature-blade-1-contentful-Palmata-asset-1-720x720-1.webp?w=1024" alt="Marketing Cloud customer profiles and AI segmentation" style="width:100%;display:block;border-radius:var(--radius)">
+      <div style="position:absolute;bottom:16px;left:16px;background:rgba(3,45,96,.9);backdrop-filter:blur(8px);color:#fff;padding:10px 16px;border-radius:8px;font-size:.8rem;max-width:360px">
+        <strong>Marketing Cloud Growth</strong> - AI segment creation with unified customer profiles. Build audiences from CRM, web, and social data.
       </div>
     </div>
   </div>
 
-  <!-- Forecast -->
+  <!-- Email & Journeys -->
   <div class="dash-panel" id="dash-forecast">
     <div class="dash-metrics">
-      <div class="dash-metric"><div class="metric-value">$1.2M</div><div class="metric-label">Commit</div><div class="metric-change up">87% confidence</div></div>
-      <div class="dash-metric"><div class="metric-value">$1.8M</div><div class="metric-label">Best Case</div><div class="metric-change up">AI-scored</div></div>
-      <div class="dash-metric"><div class="metric-value">$980K</div><div class="metric-label">Closed YTD</div><div class="metric-change up">↑ 22%</div></div>
-      <div class="dash-metric"><div class="metric-value">78%</div><div class="metric-label">Quota Attain</div><div class="metric-change up">On track</div></div>
+      <div class="dash-metric"><div class="metric-value">Email</div><div class="metric-label">AI-Written Content</div><div class="metric-change up">Personalized</div></div>
+      <div class="dash-metric"><div class="metric-value">SMS</div><div class="metric-label">Two-Way Messaging</div><div class="metric-change up">Automated</div></div>
+      <div class="dash-metric"><div class="metric-value">Journeys</div><div class="metric-label">Multi-Step Flows</div><div class="metric-change up">CRM-triggered</div></div>
+      <div class="dash-metric"><div class="metric-value">Ads</div><div class="metric-label">LinkedIn + Google</div><div class="metric-change up">Integrated</div></div>
     </div>
-    <div class="dash-chart">
-      <h4 style="margin-bottom:16px;font-size:.9rem">Monthly Revenue Forecast</h4>
-      <div class="bar-chart">
-        <div class="bar-group"><div class="bar-value">$180K</div><div class="bar blue" style="height:40%"></div><div class="bar-label">Jul</div></div>
-        <div class="bar-group"><div class="bar-value">$220K</div><div class="bar blue" style="height:49%"></div><div class="bar-label">Aug</div></div>
-        <div class="bar-group"><div class="bar-value">$310K</div><div class="bar blue" style="height:69%"></div><div class="bar-label">Sep</div></div>
-        <div class="bar-group"><div class="bar-value">$260K</div><div class="bar blue" style="height:58%"></div><div class="bar-label">Oct</div></div>
-        <div class="bar-group"><div class="bar-value">$350K</div><div class="bar green" style="height:78%"></div><div class="bar-label">Nov</div></div>
-        <div class="bar-group"><div class="bar-value">$450K</div><div class="bar green" style="height:100%"></div><div class="bar-label">Dec</div></div>
+    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:16px;position:relative">
+      <img src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/09/n-up-blade-contentful-agentforce-commerce-asset-2-720x720-1.webp?w=1024" alt="Marketing Cloud email and SMS journeys" style="width:100%;display:block;border-radius:var(--radius)">
+      <div style="position:absolute;bottom:16px;left:16px;background:rgba(3,45,96,.9);backdrop-filter:blur(8px);color:#fff;padding:10px 16px;border-radius:8px;font-size:.8rem;max-width:360px">
+        <strong>Email & Journeys</strong> - Two-way email and SMS with AI content generation and multi-step flow orchestration.
       </div>
     </div>
   </div>
