@@ -1929,6 +1929,51 @@ window.addEventListener('scroll',()=>{
     a.classList.toggle('active',a.getAttribute('href')==='#'+current);
   });
 });
+
+// === VISITOR TRACKING ===
+(function(){
+  const params=new URLSearchParams(window.location.search);
+  const ref=params.get('ref')||'direct';
+  const visitTime=new Date().toISOString();
+  const visits=JSON.parse(localStorage.getItem('pi_visits')||'[]');
+  visits.push({ref:ref,time:visitTime,page:'landing'});
+  localStorage.setItem('pi_visits',JSON.stringify(visits));
+
+  const sectionsViewed=new Set();
+  const trackObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting&&!sectionsViewed.has(e.target.id)){
+        sectionsViewed.add(e.target.id);
+        const ev={ref:ref,time:new Date().toISOString(),section:e.target.id};
+        const log=JSON.parse(localStorage.getItem('pi_section_views')||'[]');
+        log.push(ev);
+        localStorage.setItem('pi_section_views',JSON.stringify(log));
+      }
+    });
+  },{threshold:0.3});
+  document.querySelectorAll('section[id]').forEach(s=>trackObs.observe(s));
+
+  document.querySelectorAll('.nav-links a,.dash-tab,.demo-step,.toggle-btn,.stack-layer,.sidebar-item,.product-card').forEach(el=>{
+    el.addEventListener('click',function(){
+      const ev={ref:ref,time:new Date().toISOString(),action:'click',target:this.textContent.trim().substring(0,50)};
+      const log=JSON.parse(localStorage.getItem('pi_clicks')||'[]');
+      log.push(ev);
+      localStorage.setItem('pi_clicks',JSON.stringify(log));
+    });
+  });
+
+  if(ref!=='direct'){
+    document.title='PI AgSciences + Salesforce | '+ref.charAt(0).toUpperCase()+ref.slice(1);
+  }
+})();
+
+// === VIEW TRACKING REPORT (console) ===
+function piTrackingReport(){
+  console.log('=== PI AgSciences Microsite Tracking ===');
+  console.log('Visits:',JSON.parse(localStorage.getItem('pi_visits')||'[]'));
+  console.log('Sections Viewed:',JSON.parse(localStorage.getItem('pi_section_views')||'[]'));
+  console.log('Clicks:',JSON.parse(localStorage.getItem('pi_clicks')||'[]'));
+}
 </script>
 </body>
 </html>
